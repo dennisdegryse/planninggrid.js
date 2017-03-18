@@ -48,5 +48,9 @@
     "LICENSE.*",
     "CHANGELOG.*",
     "CONTRIBUTING.*"
-  ]
+  ],
+  "scripts": {
+    "test": "gulp test:single",
+    "lint": "gulp lint"
+  }
 }
