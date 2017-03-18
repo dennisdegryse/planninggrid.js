@@ -1,0 +1,161 @@
+.pg-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.pg-layer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.pg-layer:first-child {
+    position: relative;
+}
+
+.pg-context {
+    margin: 10px;
+    padding-left: 50px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pg-day,
+.pg-day-head {
+    border-left: 1px solid #ddd;
+    float: left;
+    display: block;
+}
+
+.pg-day-head {
+    min-height: 24px;
+}
+
+.pg-daycols {
+    width: 100%;
+}
+
+.pg-header {
+    padding-left: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pg-day-head-content,
+.pg-cell-content {
+    padding: 4px;
+}
+
+.pg-hour:nth-child(odd) {
+    background-color: #efefef;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.pg-hourpart {
+    border-left: 1px #ddd solid;
+    border-bottom: 1px dashed #ddd;
+    margin-left: 50px;
+    height: 30px;
+}
+
+.pg-cell {
+    margin-top: 0px;
+    height: 30px;
+    position: relative;
+    cursor: row-resize;
+}
+
+.pg-cell.active.pg-drag-up {
+    cursor: n-resize;
+}
+
+.pg-cell.active.pg-drag-down {
+    cursor: s-resize;
+}
+
+.pg-cell span {
+    padding: 4px;
+}
+
+.pg-cell:nth-child(odd) {
+    margin-top: 1px;
+}
+
+.pg-cell:last-child {
+    border-right: none;
+}
+
+.pg-cell.hover::after,
+.pg-cell:hover::after {
+    content: ' ';
+    display: block;
+    bottom: 1px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background: #afceff;
+    opacity: 0.5;
+}
+
+.pg-cell.active::after {
+    content: ' ';
+    display: block;
+    bottom: 1px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background: #406fbc;
+    opacity: 0.5;
+}
+
+.pg-cell.pg-sel-pivot::after {
+    content: ' ';
+    display: block;
+    bottom: -1px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    left: -2px;
+    background: #000;
+    border: 2px solid #ddd;
+    opacity: 0.5;
+}
+
+.pg-cell:hover:nth-child(even)::after,
+.pg-cell.hover:nth-child(even)::after,
+.pg-cell.active:nth-child(even)::after {
+    bottom: 0px;
+}
+
+.pg-cell.pg-sel-pivot:nth-child(even)::after {
+    bottom: -2px;
+}
+
+.pg-hourpart:last-child {
+    border-bottom: none;
+}
+
+.pg-hour:last-child .pg-hourpart:last-child {
+    border-bottom: none;
+}
+
+.pg-day-head {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.pg-hourrows {
+    margin-left: -50px;
+}
+
+.pg-hour-head {
+    font-size: 12px;
+    float: left;
+    padding: 8px 0px 0px 8px;
+}
