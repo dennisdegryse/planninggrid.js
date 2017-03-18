@@ -1,0 +1,52 @@
+{
+  "name": "planninggrid",
+  "title": "planninggrid",
+  "description": "A flexible JavaScript-powered planning UI",
+  "keywords": [
+    "calendar",
+    "planning",
+    "planner",
+    "scheduling",
+    "scheduler",
+    "event",
+    "flexible",
+    "jquery-plugin"
+  ],
+  "homepage": "https://fullcalendar.io/",
+  "bugs": "https://fullcalendar.io/wiki/Reporting-Bugs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fullcalendar/fullcalendar.git"
+  },
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Dennis Degryse",
+    "email": "dennisdegryse@gmail.com",
+    "url": "http://dennisdegryse.be/"
+  },
+  "copyright": "2017 Dennis Degryse",
+  "dependencies": {
+    "jquery": "2 - 3",
+    "underscore": "^1.8.3",
+    "moment": "^2.17.1",
+    "bootstrap": "^3.3.7"
+  },
+  "version": "0.0.0",
+  "releaseDate": "2017-03-18",
+  "devDependencies": {
+    "jquery": "2 - 3",
+    "underscore": "^1.8.3",
+    "moment": "^2.17.1",
+    "bootstrap": "^3.3.7"
+  },
+  "main": "dist/planninggrid.js",
+  "files": [
+    "dist/*.js",
+    "dist/*.css",
+    "dist/locale/*.js",
+    "README.*",
+    "LICENSE.*",
+    "CHANGELOG.*",
+    "CONTRIBUTING.*"
+  ]
+}
